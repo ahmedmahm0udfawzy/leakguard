@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/change_pass.css" />
+    <title>Leak Guard</title>
+  </head>
+  <body>
+    <header class="mb-5">
+      <nav class="container">
+        <div class="left">
+          <div class="login_btn">
+            <a href="login.html">
+              <span class="text-light">تسجيل الدخول</span>
+            </a>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </div>
+          <div class="subscribe">
+            <a href="http://127.0.0.1:5500/index.html#contact">اشتراك</a>
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="list_icon list_icon">
+            <i class="fa-solid fa-list"></i>
+          </div>
+          <div class="lan">
+            <select name="language" id="language">
+              <option value="arabic">AR</option>
+              <option value="english">EN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="links">
+          <ul class="">
+            <li id="contact">
+              <a
+                href="http://127.0.0.1:5500/index.html#contact"
+                class="text-dark"
+                >تواصل معنا</a
+              >
+            </li>
+
+            <li id="about_us">
+              <a
+                href="http://127.0.0.1:5500/index.html#about_us"
+                class="text-dark"
+              >
+                معلومات عنا
+              </a>
+            </li>
+            <li id="awareness">
+              <a href="blogs.html" class="text-dark">توعية</a>
+            </li>
+            <li class="active">
+              <a href="index.html" class="text-dark">الصفحة الرئيسيه</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Links None Be block in click only -->
+        <div class="links_none d-none">
+          <ul class="">
+            <li id="home" class="active">
+              <a href="index.html">الصفحة الرئيسيه</a>
+            </li>
+            <li>
+              <a href="blogs.html">توعية</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/index.html#about_us">
+                معلومات عنا
+              </a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/index.html#contact">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icon">
+          <img src="./style/images/icon.png" alt="Icon" width="50" />
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="profile row my-5">
+          <div class="col-md-5 col-lg-3 mb-4">
+            <div class="profile__account">
+              <div class="profile__account__image">
+                <p>مرحبا احمد فوزي</p>
+              </div>
+              <a
+                href="previous-bookings.html"
+                class="profile__account__option d-flex gap-4 text-black fw-bold"
+              >
+                <i class="fa-solid fa-file-invoice"></i>
+                <div class="fs-6 fw-bold">الايصالات</div>
+              </a>
+              <div class="profile__account__option d-flex gap-4">
+                <i class="fa-solid fa-user-pen"></i>
+                <a href="profile.html" class="text-dark fw-bold fs-6"
+                  >الحساب الشخصي</a
+                >
+              </div>
+              <div class="profile__account__option d-flex gap-4 active">
+                <i class="fa-solid fa-key"></i>
+                <a href="change-pass.html" class="fw-bold fs-6 active"
+                  >تغير كلمة المرور
+                </a>
+              </div>
+              <div class="profile__account__option d-flex gap-4">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <div class="fw-bold fs-6 logout">تسجيل الخروج</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-9">
+            <div class="profile__profile-details">
+              <form action="" class="d-flex flex-column gap-4">
+                <div>
+                  <p class="change_pass">تغير كلمة المرور</p>
+                  <div class="d-flex flex-column gap-4">
+                    <div class="d-flex flex-column gap-3">
+                      <label for="old-password">كلمة المرور القديمة</label>
+                      <input
+                        type="password"
+                        class="input w-100"
+                        placeholder="كلمة المرور القديمة"
+                        class="input"
+                      />
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <label for="">كلمة المرور الجديدة</label>
+                      <input
+                        type="password"
+                        class="input w-100"
+                        placeholder="كلمة المرور الجديدة"
+                      />
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <label for="confirm-password"
+                        >تاكيد كلمة المرور الجديده</label
+                      >
+                      <input
+                        type="password"
+                        class="input w-100"
+                        placeholder="تاكيد كلمة المرور"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button class="main-button">تغير كلمة المرور</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="we_here">
+          <h2>تريد ان تعرف المزيد عنا؟ نحن هنا!</h2>
+          <p>
+            نحن دائما على استعداد للإجابة على أسئلتك. تواصل معنا وأخبرنا
+            بمتطلباتك. سنكون سعداء للمساعدة!
+          </p>
+          <div
+            class="subscribe edit_button"
+            style="width: fit-content; border: none"
+          >
+            <span>اشتراك</span>
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+        </div>
+        <hr />
+        <div class="social_footer">
+          <div class="privacy">
+            <span>مركز المساعده</span>
+            <span>البنود والظروف</span>
+            <span>سياسة الخصوصية</span>
+          </div>
+          <div class="social_icons">
+            <span class="to_top">
+              <span>الرجوع الي الاعلي</span>
+              <i class="fa-solid fa-arrow-up" style="padding: 1px"></i>
+            </span>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
